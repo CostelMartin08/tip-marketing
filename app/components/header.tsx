@@ -3,9 +3,8 @@
 import Image from "next/image";
 import Tip from "@/public/brandImage/tipMarketing.svg";
 import TipW from "@/public/brandImage/tipMarketingWhite.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
+
+import { useState } from "react";
 
 const Header = () => {
 
@@ -21,12 +20,12 @@ const Header = () => {
 
     return (
 
-        <header className={`relative mx-auto px-6  w-full`}>
+        <header className={`relative  mx-auto px-6 w-dvw`}>
 
             <section className="flex container mx-auto justify-between items-center">
 
                 <Image
-                    className="w-[140px] md:w-[200px]"
+                    className="w-[120px] md:w-[200px]"
                     alt="logo"
                     src={Tip}>
 
@@ -34,7 +33,7 @@ const Header = () => {
 
                 <label
                     onClick={() => setValue(!value)}
-                    className="z-20 w-9 h-10 cursor-pointer flex flex-col items-center justify-center space-y-1.5"
+                    className="z-20 w-7 h-7 sm:h-10 sm:w-9 cursor-pointer flex flex-col items-center justify-center space-y-1.5"
                 >
                     <input
                         id="nav_bar_icon"
@@ -55,7 +54,7 @@ const Header = () => {
 
             <section id="headerMenu" className={`transition-transform duration-700 ease-in-out ${value ? 'translate-y-0' : '-translate-y-full '}  z-10 text-zinc-700 absolute top-0 right-0 left-0 h-dvh w-dvw`}>
 
-                <div className="size-full flex flex-col items-center  justify-center">
+                <div className="size-full flex flex-col items-left md:items-center  justify-center">
 
                     <div>
 
@@ -68,7 +67,7 @@ const Header = () => {
                             </Image>
                         </div>
 
-                        <ul className="text-5xl space-y-5 font-black  ms-10">
+                        <ul className="text-2xl sm:text-4xl md:text-5xl space-y-5 font-black  ms-10">
                             <li className="hover:text-zinc-500">
                                 <a href="#">acasă</a>
                             </li>
