@@ -8,13 +8,7 @@ const nextConfig = {
         hostname: 'tipmarketing.ro',
         port: '',
         pathname: '/images/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.tipmarketing.ro',
-        port: '',
-        pathname: '/images/**',
-      },
+      }
     ],
   },
   typescript: {
@@ -28,7 +22,7 @@ const nextConfig = {
   },
   serverRuntimeConfig: {
 
-    myHostname: ['164.90.167.98', '[2a03:b0c0:3:d0::1be0:1001]', 'https://tipmarketing.ro', 'https://www.tipmarketing.ro'],
+    myHostname: ['164.90.167.98', '[2a03:b0c0:3:d0::1be0:1001]', 'https://tipmarketing.ro'],
   },
   async headers() {
     return [
@@ -38,11 +32,7 @@ const nextConfig = {
           {
               key: 'Access-Control-Allow-Origin',
               value: 'https://tipmarketing.ro',
-          },
-          {
-              key: 'Access-Control-Allow-Origin',
-              value: 'https://www.tipmarketing.ro',
-          },
+          }
       ],
       },
     ];
