@@ -36,16 +36,14 @@ const nextConfig = {
         source: '/api/:path*',
         headers: [
           {
-            key: 'Access-Control-Allow-Origin',
-            value: 'https://tipmarketing.ro',
+              key: 'Access-Control-Allow-Origin',
+              value: 'https://tipmarketing.ro',
           },
-          ,
           {
-            key: 'Access-Control-Allow-Origin',
-            value: 'https://www.tipmarketing.ro',
+              key: 'Access-Control-Allow-Origin',
+              value: 'https://www.tipmarketing.ro',
           },
-
-        ],
+      ],
       },
     ];
   },
