@@ -22,7 +22,7 @@ const Header = () => {
 
         <header className={`relative  mx-auto px-6 w-dvw`}>
 
-            <section className="flex container mx-auto justify-between items-center">
+            <section className="flex container xl:px-8 mx-auto justify-between items-center">
 
                 <Image
                     className="w-[120px] md:w-[200px]"
