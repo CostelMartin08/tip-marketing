@@ -17,10 +17,9 @@ const Header = () => {
     };
 
 
-
     return (
 
-        <header className={`relative  mx-auto px-6 w-dvw`}>
+        <header className={`relative mx-auto px-6 w-dvw`}>
 
             <section className="flex container xl:px-8 mx-auto justify-between items-center">
 
@@ -33,7 +32,7 @@ const Header = () => {
 
                 <label
                     onClick={() => setValue(!value)}
-                    className="z-20 w-7 h-7 sm:h-10 sm:w-9 cursor-pointer flex flex-col items-center justify-center space-y-1.5"
+                    className="z-20 size-8  cursor-pointer flex flex-col items-center justify-center space-y-1.5"
                 >
                     <input
                         id="nav_bar_icon"

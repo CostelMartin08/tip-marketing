@@ -7,7 +7,6 @@
   overflow-x: hidden;
 }
 
-
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
@@ -38,4 +37,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.image {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  animation: header-image-animation linear;
+  animation-timeline: view();
+}
+
+@keyframes header-image-animation {
+  15% { opacity: 1; }
+  85% { opacity: 0; }
 }
