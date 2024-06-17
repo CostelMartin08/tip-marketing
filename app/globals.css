@@ -44,25 +44,33 @@ body {
   top: 0;
   z-index: -1;
   width: 100dvw;
-  animation: header-image-animation linear;
-  animation-timeline: view();
+
   opacity: 0.4;
 }
 
 @keyframes header-image-animation {
   15% {
-    opacity: 1;
+
+    background-size: 500px 300px;
+  }
+
+  35% {
+    background-size: 650px 400px;
   }
 
   85% {
-    opacity: 0.3;
+
+    background-size: 800px 500px;
   }
 }
 
-.last-box{
+.last-box {
   background-color: #121212;
 }
 
-#bg{
+#bg {
+  animation: header-image-animation linear;
+  animation-timeline: view();
   background-image: url('../public/brandImage/background.webp');
+
 }

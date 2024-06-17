@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect, useRef } from "react";
-import Bg from '@/public/brandImage/background.webp';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,37 +22,38 @@ export default function Home() {
       gsap.to(lastBoxRef.current, {
         y: -500,
         ease: "none",
-        duration: 2,
+        duration: 3,
         scrollTrigger: {
           trigger: firstBoxRef.current,
           start: "top top",
-          end: '+=700',
+          end: '+=800',
           scrub: 1,
           markers: false,
         },
       });
     }
   }, []);
+
   return (
     <>
       <main className="mb-20">
 
-        <div ref={firstBoxRef} id='bg' className="h-[700px]" >
+        <div ref={firstBoxRef} id='bg' className="h-[600px] md:h-[800px]" >
 
           <Header />
 
-          <section  className="flex justify-center items-center h-[500px]">
+          <section className="flex justify-center items-center h-[500px] md:h-[600px]">
 
-              <div  className="space-y-5 flex flex-col items-center">
+            <div className="space-y-5 flex flex-col items-center">
 
-                <h1 className="font-black text-3xl md:text-7xl">Idei de titlu smech</h1>
-                <p className="w-64 md:w-96 text-center text-sm  md:text-lg">
-                  Avem nevoie de un mesaj simplu si clar. Insa aici descriem un pic pasiumea noastra pentru marketing.
-                  Ca sa dea bine, ne trebuie vreo 3 randuri de text sub titlu
-                </p>
+              <h1 className="font-black text-3xl md:text-7xl">Idei de titlu smech</h1>
+              <p className="w-64 md:w-96 text-center text-sm  md:text-lg">
+                Avem nevoie de un mesaj simplu si clar. Insa aici descriem un pic pasiumea noastra pentru marketing.
+                Ca sa dea bine, ne trebuie vreo 3 randuri de text sub titlu
+              </p>
 
-              </div>
-            
+            </div>
+
           </section>
 
         </div>
@@ -64,6 +65,7 @@ export default function Home() {
 
       </main>
 
+      <Footer />
 
     </>
   );
