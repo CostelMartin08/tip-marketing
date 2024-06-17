@@ -1,0 +1,33 @@
+
+
+@keyframes header-image-animation {
+    15% {
+  
+      background-size: 500px 300px;
+    }
+  
+    35% {
+      background-size: 650px 400px;
+    }
+  
+    85% {
+  
+      background-size: 800px 500px;
+    }
+  }
+  
+  .box {
+    background-color: #121212;
+
+  }
+
+  .card{
+    background-color: #0B0B0B;
+  }
+  
+  #bg {
+    background-image: url('../../public/brandImage/background.webp');
+    animation: header-image-animation linear;
+    animation-timeline: view();
+    
+  }

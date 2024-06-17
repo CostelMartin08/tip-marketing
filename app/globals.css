@@ -28,10 +28,6 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-#headerMenu {
-  background-color: #FFF;
-
-}
 
 @layer utilities {
   .text-balance {
@@ -39,38 +35,4 @@ body {
   }
 }
 
-.image {
-  position: sticky;
-  top: 0;
-  z-index: -1;
-  width: 100dvw;
 
-  opacity: 0.4;
-}
-
-@keyframes header-image-animation {
-  15% {
-
-    background-size: 500px 300px;
-  }
-
-  35% {
-    background-size: 650px 400px;
-  }
-
-  85% {
-
-    background-size: 800px 500px;
-  }
-}
-
-.last-box {
-  background-color: #121212;
-}
-
-#bg {
-  animation: header-image-animation linear;
-  animation-timeline: view();
-  background-image: url('../public/brandImage/background.webp');
-
-}

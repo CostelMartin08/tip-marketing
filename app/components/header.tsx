@@ -1,4 +1,5 @@
 "use client"
+import './style.css';
 
 import Image from "next/image";
 import TipS from "@/public/brandImage/tipMarketingSecond.webp";
@@ -19,7 +20,7 @@ const Header = () => {
 
     return (
 
-        <header className={`relative mx-auto px-6 w-dvw`}>
+        <header className={`relative mx-auto px-3 w-dvw`}>
 
             <section className="flex container xl:px-8 mx-auto justify-between items-center">
 
