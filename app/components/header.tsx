@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image";
-import Tip from "@/public/brandImage/tipMarketing.svg";
-import TipW from "@/public/brandImage/tipMarketingWhite.svg";
+import TipS from "@/public/brandImage/tipMarketingSecond.webp";
+import Tip from "@/public/brandImage/tipMarketing.webp";
 
 import { useState } from "react";
 
@@ -60,7 +60,7 @@ const Header = () => {
                         <div>
                             <Image
                                 width={200}
-                                src={TipW}
+                                src={TipS}
                                 alt="logo">
 
                             </Image>
