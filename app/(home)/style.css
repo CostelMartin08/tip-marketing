@@ -31,3 +31,7 @@
     animation-timeline: view();
     
   }
+
+  .box{
+    padding-bottom: 24px;
+  }

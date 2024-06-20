@@ -1,70 +1,87 @@
 "use client"
-
-
+import Image from "next/image";
+import Logo from "@/public/brandImage/tipMarketing.webp";
 
 const Footer = () => {
 
 
-
     return (
-
 
         <footer className="container mx-auto px-6">
 
-            <div className="divide-y divide-gray-400">
+            <section className="first-div xl:px-8">
 
-                <section className="xl:px-8">
+                <div className="flex flex-col lg:flex-row justify-between ">
+                    <div className="space-y-4 font-extralight">
+                        <Image
+                            src={Logo}
+                            alt="logo"
+                            width={400}
+                            height={400}>
 
-                    <div className="flex flex-col md:flex-row justify-between ">
-                        <div className="p-8">
-                            <p className="font-black text-xl md:text-3xl">Vrei să obții mai mulți clienți?</p>
-                            <p className="text-sm md:text-lg">tipmarketing.contact@gmail.com<br />
-                                +40 756 345 892</p>
+                        </Image>
+
+                    </div>
+                    <div className="border p-8  m-4 lg:m-8  flex flex-col items-center justify-center">
+                        <div className="h-4/5 flex flex-col justify-between">
+                            <div className="text-lg">
+                                <span className="font-extralight">ia legătura cu noi</span>
+                                <p className="text-lg lg:text-2xl font-black">tipmarketing.contact@gmail.com</p>
+                            </div>
+                            <div className="border"></div>
+                            <div>
+                                <span className="font-extralight">urmărește-ne pe instagram</span>
+                                <p className="text-lg lg:text-2xl font-black">
+                                    @tipmarketing.ro</p>
+                            </div>
+
                         </div>
-                        <div className="px-8 pb-6 md:pb-0 flex items-center">
-                            <button className="bg-yellow-500 w-full md:w-auto p-3 rounded-lg">Solicită oferta</button>
-                        </div>
 
                     </div>
 
-                </section>
+                </div>
+
+            </section>
+
+            <div className="last-div line"></div>
 
 
+            <section className="second-div space-y-8 md:space-y-0 xl:px-8 flex flex-col lg:flex-row items-left justify-between">
 
+                <div className="px-8">
+                    <p className="font-bold text-2xl pb-8">Generale</p>
+                    <ul className="space-y-5 md:space-y-10 text-lg font-extralight">
+                        <li>Despre campanii</li>
+                        <li>Intrebari frecvente</li>
+                        <li>A.N.P.C</li>
+                    </ul>
+                </div>
+                <div className="px-8">
+                    <p className="font-bold text-2xl pb-8">Utile</p>
+                    <ul className="space-y-5 md:space-y-10 text-lg font-extralight">
+                        <li>Blog</li>
+                        <li>Termeni si conditii</li>
+                        <li>Politica cookies</li>
+                    </ul>
+                </div>
 
-                <section className="xl:px-8 flex flex-col lg:flex-row items-left justify-between">
+                <div className="px-8">
+                    <p className="font-bold text-2xl pb-8">Contact</p>
+                    <ul className="space-y-5 md:space-y-10 text-lg font-extralight">
+                        <li>Vanzari</li>
+                        <li>+40745202847</li>
+                        <li>tipmarketing.contact@gmail.com</li>
+                    </ul>
+                </div>
 
-                    <div className="p-8">
-                        <p className="font-bold text-xl pb-3">Generale</p>
-                        <ul className="space-y-3 text-lg">
-                            <li>Despre campanii</li>
-                            <li>Intrebari frecvente</li>
-                            <li>A.N.P.C</li>
-                        </ul>
-                    </div>
-                    <div className="p-8">
-                        <p className="font-bold text-lg pb-3">Utile</p>
-                        <ul className="space-y-3 text-lg">
-                            <li>Blog</li>
-                            <li>Termeni si conditii</li>
-                            <li>Politica cookies</li>
-                        </ul>
-                    </div>
+            </section>
 
-                    <div className="p-8">
-                        <p className="font-bold text-lg pb-3">Contact</p>
-                        <ul className="space-y-3 text-lg">
-                            <li>Vanzari</li>
-                            <li>+40745202847</li>
-                            <li>tipmarketing.contact@gmail.com</li>
-                        </ul>
-                    </div>
+            <section className="xl:px-8 py-1">
 
-                </section>
-            </div>
-            <section className="xl:px-8">
-
-                <p className="md:px-8 text-sm md:text-base py-3">Creat din pasiune de <span className="font-bold">TipMarketing</span> pentru <span className="font-bold">TipMarketing</span> ❤️</p>
+                <p className="text-base font-extralight py-3">Creat din pasiune de
+                    <span className="font-bold">TipMarketing</span> pentru
+                    <span className="font-bold">TipMarketing</span> ❤️
+                </p>
 
             </section>
 

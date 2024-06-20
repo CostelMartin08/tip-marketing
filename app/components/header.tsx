@@ -20,7 +20,7 @@ const Header = () => {
 
     return (
 
-        <header className={`relative mx-auto px-3 w-dvw`}>
+        <header className='text-sm relative mx-auto px-3 w-dvw'>
 
             <section className="flex container xl:px-8 mx-auto justify-between items-center">
 
@@ -67,18 +67,18 @@ const Header = () => {
                             </Image>
                         </div>
 
-                        <ul className="text-2xl sm:text-4xl md:text-5xl space-y-5 font-black  ms-10">
+                        <ul className="text-3xl sm:text-5xl md:text-6xl space-y-5 font-black ms-10">
                             <li className="hover:text-zinc-500">
-                                <a href="#">acasă</a>
+                                <a href="#">despre noi</a>
+                            </li>
+                            <li className="hover:text-zinc-500">
+                                <a href="#">servicii</a>
+                            </li>
+                            <li className="hover:text-zinc-500">
+                                <a href="#">pachete </a>
                             </li>
                             <li className="hover:text-zinc-500">
                                 <a href="#">portofoliu</a>
-                            </li>
-                            <li className="hover:text-zinc-500">
-                                <a href="#">web development</a>
-                            </li>
-                            <li className="hover:text-zinc-500">
-                                <a href="#">facebook Ads</a>
                             </li>
                             <li className="hover:text-zinc-500">
                                 <a href="#">contact</a>
