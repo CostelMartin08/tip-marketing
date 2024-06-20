@@ -11,10 +11,10 @@ const Contact = () => {
 
         <section className="px-2 xl:px-10 container p-5">
 
-            <form className="h-full card rounded-3xl p-5 md:p-10 text-lg font-light space-y-8">
+            <form className="h-full card rounded-3xl p-8 md:p-10 md:text-lg font-extralight space-y-5 md:space-y-7">
 
 
-                <div className="grid md:grid-cols-2 gap-3">
+                <div className="grid md:grid-cols-2 space-y-5 md:gap-4 md:space-y-0">
 
                     <div className="flex flex-col items-start gap-4">
                         <label htmlFor="name">NUMELE DUMNEAVOASTRĂ</label>
@@ -27,7 +27,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-3">
+                <div className="grid md:grid-cols-2 space-y-5 md:gap-4 md:space-y-0">
                     <div className="flex flex-col items-start gap-4">
                         <label htmlFor="site">SITE-UL DVS</label>
                         <input className="w-full p-3 rounded-3xl bg-input" id="site" type="text"></input>
@@ -43,12 +43,12 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start gap-4">
                     <label htmlFor="text">MESAJUL DVS:</label>
                     <textarea className="w-full p-3 rounded-3xl" id="text"></textarea>
                 </div>
-                <div className="flex justify-end">
-                    <button className="border font-semibold rounded-3xl p-3 w-[230px]" type="submit">Trimite mesaj</button>
+                <div className="flex justify-end  py-2">
+                    <button className="border font-semibold rounded-3xl p-3 md:w-[230px]" type="submit">Trimite mesaj</button>
                 </div>
 
             </form>

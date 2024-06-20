@@ -24,14 +24,14 @@ const Footer = () => {
                     </div>
                     <div className="border p-8  m-4 lg:m-8  flex flex-col items-center justify-center">
                         <div className="h-4/5 flex flex-col justify-between">
-                            <div className="text-lg">
+                            <div className="md:text-lg">
                                 <span className="font-extralight">ia legătura cu noi</span>
-                                <p className="text-lg lg:text-2xl font-black">tipmarketing.contact@gmail.com</p>
+                                <p className="md:text-lg lg:text-2xl font-black">tipmarketing.contact@gmail.com</p>
                             </div>
                             <div className="border"></div>
                             <div>
                                 <span className="font-extralight">urmărește-ne pe instagram</span>
-                                <p className="text-lg lg:text-2xl font-black">
+                                <p className="md:text-lg lg:text-2xl font-black">
                                     @tipmarketing.ro</p>
                             </div>
 
