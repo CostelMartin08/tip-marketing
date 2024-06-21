@@ -5,14 +5,11 @@
 const Contact = () => {
 
 
-
-
     return (
 
         <section className="px-2 xl:px-10 container p-5">
 
-            <form className="h-full card rounded-3xl p-8 md:p-10 md:text-lg font-extralight space-y-5 md:space-y-7">
-
+            <form className="h-full card rounded-3xl p-5 sm:p-8 md:p-10 md:text-lg font-extralight space-y-5 md:space-y-7">
 
                 <div className="grid md:grid-cols-2 space-y-5 md:gap-4 md:space-y-0">
 
@@ -32,14 +29,17 @@ const Contact = () => {
                         <label htmlFor="site">SITE-UL DVS</label>
                         <input className="w-full p-3 rounded-3xl bg-input" id="site" type="text"></input>
                     </div>
-                    <div className="flex flex-col items-start gap-4">
+                    <div className="flex flex-col items-start gap-4 pe-2">
                         <label htmlFor="options">CE TE INTERESEAZĂ?</label>
-                        <select className="w-full p-3  rounded-3xl bg-input" id="options">
-                            <option value="">Alege o opțiune</option>
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
-                        </select>
+                        <div className="select-mod">
+
+                            <select className="select-input w-full focus:outline-none  rounded-3xl bg-input" id="options">
+                                <option className="" value="">Alege o opțiune...</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
