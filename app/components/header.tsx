@@ -10,7 +10,6 @@ import { useState } from "react";
 const Header = () => {
 
 
-
     const [value, setValue] = useState(false);
 
     const handleCheckboxChange = (event: { target: { checked: boolean | ((prevState: boolean) => boolean); }; }) => {
@@ -67,7 +66,7 @@ const Header = () => {
                             </Image>
                         </div>
 
-                        <ul className="text-3xl sm:text-5xl md:text-6xl space-y-5 font-black ms-10">
+                        <ul className="text-3xl sm:text-5xl space-y-5 font-black ms-10">
                             <li className="hover:text-zinc-500">
                                 <a href="#">despre noi</a>
                             </li>
