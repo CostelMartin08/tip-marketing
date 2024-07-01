@@ -37,3 +37,4 @@ export function validatePhoneNumber(phone: string) {
 
     return { isValid: true };
 }
+

@@ -1,8 +1,8 @@
 import { faInstagram, faMeta, faTiktok } from "@fortawesome/free-brands-svg-icons";
-import { faW } from "@fortawesome/free-solid-svg-icons";
+import { faChartPie, faStore, faW } from "@fortawesome/free-solid-svg-icons";
 
-import { OfferProps } from "../components/Offer";
-import { ProjectsProps } from "../components/Projects";
+import { OfferProps } from "../sections/Offer";
+import { ProjectsProps } from "../sections/Projects";
 
 export const sectionData = {
 
@@ -40,31 +40,31 @@ export const offerData: OfferProps[] = [
     },
     {
         logo: faInstagram,
-        title: 'META MARKETING',
-        message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
-
-    },
-    {
-        logo: faW,
-        title: 'META MARKETING',
+        title: 'INSTAGRAM MANAGEMENT',
         message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
 
     },
     {
         logo: faTiktok,
-        title: 'META MARKETING',
+        title: 'TIKTOK MARKETING',
         message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
 
     },
     {
         logo: faW,
-        title: 'META MARKETING',
+        title: 'WEB DEVELOPMENT',
         message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
 
     },
     {
-        logo: faMeta,
-        title: 'META MARKETING',
+        logo: faStore,
+        title: 'BRANDING & IDENTITY',
+        message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
+
+    },
+    {
+        logo: faChartPie,
+        title: 'GA MASTERY',
         message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
 
     }

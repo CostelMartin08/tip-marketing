@@ -1,9 +1,9 @@
 "use client"
+
 import Image from "next/image";
 import Logo from "@/public/brandImage/tipMarketing.webp";
 
 const Footer = () => {
-
 
     return (
 
