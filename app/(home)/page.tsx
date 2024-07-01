@@ -6,12 +6,12 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { Key, useEffect, useRef } from "react";
 
-import Header from '../sections/header';
-import SectionText from '../components/sectionText';
+import Header from '../sections/Header';
+import SectionText from '../components/SectionText';
 import Offer from '../sections/Offer';
 import Projects from '../sections/Projects';
 import Contact from '../sections/Contact';
-import Footer from '../sections/footer';
+import Footer from '../sections/Footer';
 
 import { offerData, sectionData, projectData } from '../data/data';
 
