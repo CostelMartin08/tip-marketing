@@ -78,6 +78,7 @@ const Footer = () => {
 
             <section className="xl:px-8 py-1">
 
+
                 <p className="text-base font-extralight py-3">Creat din pasiune de
                     <span className="font-bold">TipMarketing</span> pentru
                     <span className="font-bold">TipMarketing</span> ❤️

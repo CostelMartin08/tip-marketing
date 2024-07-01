@@ -6,7 +6,6 @@ interface SectionTextProps {
     message: string;
 }
 
-
 const SectionText: React.FC<SectionTextProps> = ({ borderTitle, title, message }) => {
 
     return (

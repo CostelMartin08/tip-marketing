@@ -16,7 +16,6 @@ const Header = () => {
         setValue(event.target.checked);
     };
 
-
     return (
 
         <header className='text-sm relative mx-auto px-3 w-dvw'>
