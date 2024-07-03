@@ -4,7 +4,7 @@ import './style.css';
 import gsap from 'gsap';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-import { Key, useEffect, useRef } from "react";
+import { Key, useEffect, useRef, useState } from "react";
 
 import Header from '../sections/Header';
 import SectionText from '../components/SectionText';
@@ -14,6 +14,9 @@ import Contact from '../sections/Contact';
 import Footer from '../sections/Footer';
 
 import { offerData, sectionData, projectData } from '../data/data';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Details } from '../components/Details';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,7 +36,7 @@ const Home: React.FC = () => {
   useEffect(() => {
 
     if (firstBoxRef.current && lastBoxRef.current) {
-      console.log(firstBoxRef)
+
       gsap.to(lastBoxRef.current, {
         y: -500,
         ease: "none",
@@ -51,9 +54,21 @@ const Home: React.FC = () => {
   }, []);
 
 
+  const [info, setInfo] = useState<number>(0);
+  const [visible, setVisible] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (visible) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+
+  }, [visible]);
+
   return (
     <>
-      <main className='text-sm'>
+      <main className='text-sm relative '>
 
         <div ref={firstBoxRef} id='bg' className="h-[600px] md:h-[800px]" >
 
@@ -75,28 +90,34 @@ const Home: React.FC = () => {
 
         </div>
 
-        <section ref={lastBoxRef} className="box flex flex-col items-center text-center space-y-16 py-8 md:p-10 rounded-t-3xl">
+        <section
+          id="second-ref"
+          ref={lastBoxRef}
+          className={`${visible && 'blur-sm'} box space-y-16 py-8 md:p-10 rounded-t-3xl`}>
 
           <SectionText borderTitle={despreNoi.borderTitle} title={despreNoi.title} message={despreNoi.message} />
 
-
           <SectionText borderTitle={serviciileNoastre.borderTitle} title={serviciileNoastre.title} message={serviciileNoastre.message} />
 
+          <div className='container relative mx-auto px-2 lg:w-11/12 xl:w-10/12 '>
 
-          <section className='px-2 container lg:w-11/12 xl:w-10/12 grid md:grid-cols-2 xl:grid-cols-3 gap-5'>
+            <section className='grid md:grid-cols-2 xl:grid-cols-3 gap-5'>
 
-            {offer.map((element: { logo: IconProp; title: string; message: string; }, index: Key | null | undefined) => (
-              <Offer
-                key={index}
-                logo={element.logo}
-                title={element.title}
-                message={element.message}
-              />
-            ))}
+              {offer.map((element: { logo: IconProp; title: string; message: string; }, index: number,) => (
+                <Offer
+                  key={index}
+                  logo={element.logo}
+                  title={element.title}
+                  message={element.message}
+                  index={index}
+                  visible={setVisible}
+                  setNumber={setInfo}
+                />
+              ))}
 
-          </section>
+            </section>
 
-
+          </div>
           <SectionText borderTitle={proiecteleNoastre.borderTitle} title={proiecteleNoastre.title} message={proiecteleNoastre.message} />
 
 
@@ -114,6 +135,14 @@ const Home: React.FC = () => {
           <Contact />
 
         </section>
+
+
+        <section className={`info-card  ${visible ? 'visible-element' : 'invisible-element'}`}>
+
+          {visible ? <Details setVisible={setVisible} index={info as number} /> : null}
+
+        </section>
+
 
       </main>
 

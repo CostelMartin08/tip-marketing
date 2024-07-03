@@ -30,7 +30,7 @@ export const sectionData = {
 
 };
 
-export const offerData: OfferProps[] = [
+export const offerData = [
 
     {
         logo: faMeta,
@@ -40,7 +40,7 @@ export const offerData: OfferProps[] = [
     },
     {
         logo: faInstagram,
-        title: 'INSTAGRAM MANAGEMENT',
+        title: 'INSTA MANAGEMENT',
         message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida, est sit amet molestie aliquet,turpis augue convallis dolor, nec tincidunt ligula neque vestibulum turpis. Mauris quis velit a risus',
 
     },
@@ -72,6 +72,106 @@ export const offerData: OfferProps[] = [
 ];
 
 
+export const offerDetails = [
+
+    {
+        title: 'META MARKETING',
+        text: `Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies erat 
+        dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus lacinia, 
+        est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus odio eget orci.
+        Suspendisse Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et
+        ultricies erat dignissim nec. Mauris molestie odio quis ante tristique sodales.
+        Vivamus lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula 
+        risus odio eget orci. Suspendisse.
+        Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies erat 
+        dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus lacinia, 
+        est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus odio eget orci.
+        Suspendisse Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et
+        ultricies erat dignissim nec. Mauris molestie odio quis ante tristique sodales.
+        Vivamus lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula 
+        risus odio eget orci. Suspendisse.`,
+    },
+    {
+        title: 'INSTA MANAGEMENT',
+        text: `Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies erat 
+        dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus lacinia, 
+        est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus odio eget orci.
+        Suspendisse Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et
+        ultricies erat dignissim nec. Mauris molestie odio quis ante tristique sodales.
+        Vivamus lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula 
+        risus odio eget orci. Suspendisse.`,
+
+    },
+    {
+        title: 'TIKTOK MARKETING',
+        text: `Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies erat 
+        dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus lacinia, 
+        est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus odio eget orci.
+        Suspendisse Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et
+        ultricies erat dignissim nec. Mauris molestie odio quis ante tristique sodales.
+        Vivamus lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula 
+        risus odio eget orci. Suspendisse.`,
+    },
+    {
+        title: 'WEB DEVELOPMENT',
+        text: `Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies erat 
+        dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus lacinia, 
+        est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus odio eget orci.
+        Suspendisse Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et
+        ultricies erat dignissim nec. Mauris molestie odio quis ante tristique sodales.
+        Vivamus lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula 
+        risus odio eget orci. Suspendisse.`,
+
+    },
+    {
+        title: 'BRANDING & IDENTITY',
+        text: `Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies erat 
+        dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus lacinia, 
+        est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus odio eget orci.
+        Suspendisse Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et
+        ultricies erat dignissim nec. Mauris molestie odio quis ante tristique sodales.
+        Vivamus lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula 
+        risus odio eget orci. Suspendisse.`,
+
+    },
+    {
+        title: 'GA MASTERY',
+        text:
+            `Duis aliquet metus sagittis urna porttitor faucibus. Sed est ante, 
+        ullamcorper nec mi eget, commodo lobortis nisi. Quisque congue cursus 
+        erat, et ultricies erat dignissim nec. Mauris molestie odio quis ante 
+        tristique sodales. Vivamus lacinia, est quis pretium lacinia, ex arcu 
+        fringilla purus, at vehicula risus odio eget orci. Suspendisse Duis 
+        aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper 
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies 
+        erat dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus 
+        lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus 
+        odio eget orci. Suspendisse.  
+        Vivamus lacinia, est quis pretium lacinia, ex arcu 
+        fringilla purus, at vehicula risus odio eget orci. Suspendisse Duis 
+        aliquet metus sagittis urna porttitor faucibus. Sed est ante, ullamcorper 
+        nec mi eget, commodo lobortis nisi. Quisque congue cursus erat, et ultricies 
+        erat dignissim nec. Mauris molestie odio quis ante tristique sodales. Vivamus 
+        lacinia, est quis pretium lacinia, ex arcu fringilla purus, at vehicula risus 
+        odio eget orci. Suspendisse.`,
+
+    }
+
+]
+
+
 export const projectData: ProjectsProps[] = [
 
     {
@@ -95,9 +195,9 @@ export const projectData: ProjectsProps[] = [
         photo: 'https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     }
 
-
-
-
-
 ]
+
+
+
+
 

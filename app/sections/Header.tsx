@@ -50,7 +50,7 @@ const Header = () => {
                 </label>
             </section>
 
-            <section id="headerMenu" className={`transition-transform duration-700 ease-in-out ${value ? 'translate-y-0' : '-translate-y-full '}  z-10 text-zinc-700 absolute top-0 right-0 left-0 h-dvh w-dvw`}>
+            <section id="headerMenu" className={`transition-transform duration-700 ease-in-out ${value ? 'translate-y-0 ' : 'header-mode -translate-y-full '}  z-10 text-zinc-700 absolute top-0 right-0 left-0 h-dvh w-dvw`}>
 
                 <div className="size-full flex flex-col items-left md:items-center  justify-center">
 
@@ -58,14 +58,14 @@ const Header = () => {
 
                         <div>
                             <Image
-                                width={200}
+                                width={150}
                                 src={TipS}
                                 alt="logo">
 
                             </Image>
                         </div>
 
-                        <ul className="text-3xl sm:text-5xl space-y-5 font-black ms-10">
+                        <ul className="text-2xl sm:text-3xl space-y-5 font-black ms-10">
                             <li className="hover:text-zinc-500">
                                 <a href="#">despre noi</a>
                             </li>

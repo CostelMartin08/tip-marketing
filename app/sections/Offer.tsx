@@ -9,9 +9,12 @@ export interface OfferProps {
     logo: IconProp;
     title: string;
     message: string;
+    index:  number;
+    visible: React.Dispatch<React.SetStateAction<boolean>>;
+    setNumber: React.Dispatch<React.SetStateAction<number>>;
   }
 
-  const Offer: React.FC<OfferProps> = ({ logo, title, message }) => {
+  const Offer: React.FC<OfferProps> = ({ logo, title, message, visible, setNumber, index }) => {
 
 
     return (
@@ -22,13 +25,13 @@ export interface OfferProps {
                 <FontAwesomeIcon className='text-black text-2xl' icon={logo} />
             
             </div>
-            <h2 className='text-xl font-black'>{title}</h2>
+            <h2 className='text-xl font-black whitespace-nowrap overflow-hidden'>{title}</h2>
             <p className='font-extralight'>{message}</p>
 
 
-            <a className='font-extralight' href="#">cere ofertă
+            <button onClick={() => { visible(true); setNumber(index as number); }}  className='font-extralight' >Află mai multe
                 <FontAwesomeIcon className='px-2' icon={faArrowRight} />
-            </a>
+            </button>
         </div>
 
 
