@@ -5,7 +5,7 @@ import Image from "next/image";
 import TipS from "@/public/brandImage/tipMarketingSecond.webp";
 import Tip from "@/public/brandImage/tipMarketing.webp";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
 
@@ -15,6 +15,16 @@ const Header = () => {
     const handleCheckboxChange = (event: { target: { checked: boolean | ((prevState: boolean) => boolean); }; }) => {
         setValue(event.target.checked);
     };
+
+
+    useEffect(() => {
+        if (value) {
+          document.body.classList.add('overflow-hidden');
+        } else {
+          document.body.classList.remove('overflow-hidden');
+        }
+    
+      }, [value]);
 
     return (
 

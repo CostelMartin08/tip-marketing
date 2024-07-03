@@ -80,8 +80,8 @@ const Footer = () => {
 
 
                 <p className="text-base font-extralight py-3">Creat din pasiune de
-                    <span className="font-bold">TipMarketing</span> pentru
-                    <span className="font-bold">TipMarketing</span> ❤️
+                    <span className="font-bold"> TipMarketing</span> pentru
+                    <span className="font-bold"> TipMarketing</span> ❤️
                 </p>
 
             </section>
